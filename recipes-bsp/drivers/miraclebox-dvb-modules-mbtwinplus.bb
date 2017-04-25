@@ -4,11 +4,11 @@ PRIORITY = "required"
 LICENSE = "CLOSED"
 
 KV = "4.1.24"
-GCCREV = "6.3.0"
-SRCDATE = "20170318"
+GCCREV = "6.2.0"
+SRCDATE = "20170424"
 
-SRC_URI[md5sum] = "52ed0e160f0431e8ff1fefdbb1066f83"
-SRC_URI[sha256sum] = "951a1edd102a1fe0f0025c1572f81bd4f4edc70f63ba85df88feda6c52c7e650"
+SRC_URI[md5sum] = "522e312f48f939ff8209724ab4cdcbea"
+SRC_URI[sha256sum] = "0d38afba6e9b9b4efcf4c1c3bafe759800a0f6b3d59ca27404786255d55d5000"
 
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
