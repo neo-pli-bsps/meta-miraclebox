@@ -61,7 +61,18 @@ IMAGE_CMD_ubifs_prepend = " \
 	rm -Rf ${IMAGE_ROOTFS}/tmp/*; \
 	"
 
-MACHINE_FEATURES += "alsa usbhost wlan 3dtv switchoff osdposition hdmicec dvbusb"
+MACHINE_FEATURES += "alsa usbhost wlan 3dtv switchoff osdposition hdmicec dvbusb HDMI"
 
 require conf/machine/include/tune-mips32.inc
 require conf/machine/include/miraclebox-wifi.inc
+
+BOX_BRAND = "ceryon"
+
+RCNAME = "miraclebox"
+
+MTD_KERNEL = "mtd1"
+MTD_ROOTFS = "mtd2"
+KERNEL_FILE = "kernel.bin"
+ROOTFS_FILE = "rootfs.bin"
+
+BLINDSCAN_BINARY = "ceryon_blindscan"
