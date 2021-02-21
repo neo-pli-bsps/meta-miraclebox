@@ -6,7 +6,6 @@ KERNEL_MODULE_AUTOLOAD += "xfs"
 MACHINE_FEATURES_BACKFILL_CONSIDERED = "rtc"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS = "\
-	${@bb.utils.contains("GST_VERSION", "1.0", "gstreamer1.0-libav", "gst-ffmpeg", d)} \
 	miraclebox-dvb-modules-${MACHINE} \
 	kernel-vmlinux \
 	"
